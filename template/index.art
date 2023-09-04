@@ -1,1 +1,6 @@
 {{extend './default'}}
+
+{{block 'body'}}
+
+{{@content}}
+{{/block}}
