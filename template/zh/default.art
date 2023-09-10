@@ -1,3 +1,13 @@
 {{extend '../default'}}
 
 {{block 'lang'}}zh{{/block}}
+
+{{block 'body'}}
+<header>
+  <img class="logo" src="/logo.png" />
+  <a>文档</a>
+  <a>插件</a>
+  <a>主题</a>
+</header>
+{{@content}}
+{{/block}}

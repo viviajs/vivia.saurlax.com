@@ -1,0 +1,89 @@
+body {
+  --primary: #ba7176;
+  --primary-dark: #301d1e;
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.header {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--primary-dark);
+  user-select: none;
+}
+
+.header-group {
+  margin: auto;
+  width: min(100%, 1200px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-item {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.logo {
+  width: 40px;
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 8px;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: var(--primary);
+}
+
+.search {
+  padding: 2px 0;
+  border-bottom: 1px solid gray;
+  transition: border-color 0.2s ease;
+}
+
+.search:hover,
+.search:focus-within {
+  border-color: white;
+}
+
+.search input {
+  width: 60px;
+  color: inherit;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background: none;
+  text-overflow: ellipsis;
+  user-select: initial;
+  transition: width 0.2s ease;
+}
+
+.search:hover input,
+.search:focus-within input {
+  width: 120px;
+}
+
+.language select {
+  color: inherit;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.language select option {
+  color: initial;
+}

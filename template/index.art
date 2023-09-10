@@ -1,6 +1,12 @@
 {{extend './default'}}
 
-{{block 'body'}}
+{{block 'head'}}
+<link rel="stylesheet" href="/index.css" />
+{{/block}}
 
-{{@content}}
+{{block 'body'}}
+<header class="banner">
+  <h1>Vivia</h1>
+  <h2>Simple and fast static website generator</h2>
+</header>
 {{/block}}

@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 
+<html lang="en">
+
 <head lang="{{block 'lang'}}en{{/block}}">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/base.css" />
+  <link rel="stylesheet" href="/default.css" />
   <link rel="icon" href="/logo.png" />
+  <script src="/default.js"></script>
   {{@head}}
   {{block 'head'}}{{/block}}
   <title>{{block 'title'}}Vivia{{/block}}</title>
 </head>
 
 <body>
+  <header class="header">
+    <div class="header-group">
+      <div class="header-item">
+        <img class="logo" src="/logo.png" alt="logo" />
+        <div class="navbar">
+          <a href="/docs">Docs</a>
+          <a href="plugins">Plugins</a>
+          <a href="themes">Themes</a>
+          <a href="https://github.com/saurlax/vivia">GitHub</a>
+        </div>
+      </div>
+      <div class="header-item">
+        <div class="search">
+          <span>🔍</span>
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="language">
+          <span>🌐</span>
+          <select onchange="changeLanguage(this)">
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
   {{block 'body'}}
   {{@content}}
   {{/block}}
