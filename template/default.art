@@ -5,6 +5,7 @@
 <head lang="{{block 'lang'}}en{{/block}}">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/default.css" />
   <link rel="icon" href="/logo.png" />
   <script src="/default.js"></script>
@@ -15,27 +16,28 @@
 
 <body>
   <header class="header">
-    <div class="header-group">
-      <div class="header-item">
-        <img class="logo" src="/logo.png" alt="logo" />
-        <div class="navbar">
-          <a href="/docs">Docs</a>
-          <a href="plugins">Plugins</a>
-          <a href="themes">Themes</a>
-          <a href="https://github.com/saurlax/vivia">GitHub</a>
+    <div class="header-inner">
+      <img class="logo" src="/logo.png" alt="logo" />
+      <input type="checkbox" class="fa fa-bars header-bar-switch desktop-hide" />
+      <div class="header-bar">
+        <div class="header-bar-group">
+          <a class="navlink" href="/docs">Docs</a>
+          <a class="navlink" href="plugins">Plugins</a>
+          <a class="navlink" href="themes">Themes</a>
+          <a class="navlink" href="https://github.com/saurlax/vivia">GitHub</a>
         </div>
-      </div>
-      <div class="header-item">
-        <div class="search">
-          <span>🔍</span>
-          <input type="text" placeholder="Search" />
-        </div>
-        <div class="language">
-          <span>🌐</span>
-          <select onchange="changeLanguage(this)">
-            <option value="en">English</option>
-            <option value="zh">中文</option>
-          </select>
+        <div class="header-bar-group">
+          <div class="search">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="language">
+            <i class="fa fa-globe"></i>
+            <select onchange="changeLanguage(this)">
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
@@ -43,6 +45,11 @@
   {{block 'body'}}
   {{@content}}
   {{/block}}
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© 2023 Saurlax</div>
+    </div>
+  </footer>
 </body>
 
 </html>

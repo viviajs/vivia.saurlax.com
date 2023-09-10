@@ -1,23 +1,58 @@
+/* banner */
 .banner {
   color: white;
   padding: 20px;
   height: 360px;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--primary-dark);
-}
-
-.banner img {
-  width: 100px;
+  gap: 60px;
+  background-color: var(--primary-background);
 }
 
 .banner h1 {
   margin: 0;
+  font-weight: normal;
 }
 
 .banner h2 {
   margin: 0;
+  font-weight: normal;
   color: lightgray;
+}
+
+.banner-quick-start {
+  cursor: pointer;
+}
+
+.banner-quick-start a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.banner-quick-start:hover a {
+  color: var(--primary);
+}
+
+.banner-quick-start pre {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 2px;
+  background-color: var(--primary-light);
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+}
+
+.banner-quick-start pre::before {
+  content: '$ ';
+  color: lightgray;
+}
+
+/* features */
+.features {
+  color: lightgray;
+  padding: 20px;
+  background-color: var(--primary-dark);
 }

@@ -6,7 +6,25 @@
 
 {{block 'body'}}
 <header class="banner">
-  <h1>Vivia</h1>
-  <h2>Simple and fast static website generator</h2>
+  <div>
+    <h1>Vivia</h1>
+    <h2>『Simple and fast static website generator』</h2>
+  </div>
+  <div class="banner-quick-start">
+    <a href="/docs">Quick start</a>
+    <pre>npm create vivia</pre>
+    <a href="/docs" class="fa fa-angle-right"></a>
+  </div>
 </header>
+<p>🚧Under construction🚧</p>
+<div class="features">
+  <div>Features</div>
+  <div>Only encapsulate the basic components of the website (source, templates, data), simple and fast</div>
+  <div>Plugins pipeline, by defining render and prerender pipeline in configuration, each plugin can control the final
+    output, including operations such as adding watermarks to images</div>
+  <div>A more natural output, where the structure in source is the final website structure</div>
+  <div>Theme inheritance, no need to write complex configuration, just inherit the theme directly</div>
+  <div>
+  </div>
+</div>
 {{/block}}
