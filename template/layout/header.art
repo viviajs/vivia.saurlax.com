@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="header-inner">
+    <img class="logo" src="/logo.png" alt="logo" />
+    <input type="checkbox" class="fa fa-bars header-bar-switch desktop-hide" />
+    <div class="header-bar">
+      <div class="header-bar-group">
+        <a class="navlink" href="/docs">Docs</a>
+        <a class="navlink" href="/plugins">Plugins</a>
+        <a class="navlink" href="/themes">Themes</a>
+        <a class="navlink" href="https://github.com/saurlax/vivia">GitHub</a>
+      </div>
+      <div class="header-bar-group">
+        <div class="search">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="language">
+          <i class="fa fa-globe"></i>
+          <select onchange="changeLanguage(this)">
+            <option value="en">English</option>
+            <option value="zh-cn">简体中文</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
