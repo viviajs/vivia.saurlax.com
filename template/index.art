@@ -8,23 +8,39 @@
 <header class="banner">
   <div>
     <h1>Vivia</h1>
-    <h2>『Simple and fast static website generator』</h2>
+    <h2>Simple and fast static website generator</h2>
   </div>
   <div class="banner-quick-start">
     <a href="/docs">Quick start</a>
-    <pre>npm create vivia</pre>
-    <a href="/docs" class="fa fa-angle-right"></a>
   </div>
 </header>
-<p>🚧Under construction🚧</p>
-<div class="features">
-  <div>Features</div>
-  <div>Only encapsulate the basic components of the website (source, templates, data), simple and fast</div>
-  <div>Plugins pipeline, by defining render and prerender pipeline in configuration, each plugin can control the final
-    output, including operations such as adding watermarks to images</div>
-  <div>A more natural output, where the structure in source is the final website structure</div>
-  <div>Theme inheritance, no need to write complex configuration, just inherit the theme directly</div>
-  <div>
+<div class="content max-width">{{@content}}</div>
+<div class="poster">
+  <div class="max-width">
+    <p>Unleash the full potential of your creativity with Vivia, the static website generator that empowers you to build
+      stunning websites effortlessly.</p>
+
+    <h3>Explore Minimalistic Freedom</h3>
+    <p>Embrace the power of simplicity. Vivia's minimalistic approach allows you to focus on your content and ideas
+      without getting bogged down by unnecessary complexities.</p>
+
+    <h3>Extend with Plugins</h3>
+    <p>Plug into endless possibilities! With our versatile plugin pipeline, you can enhance your website by
+      incorporating unique features and functionalities. Define rendering and prerendering processes to customize the
+      output exactly as you envision.</p>
+
+    <h3>Seamless Theme Inheritance</h3>
+    <p>Simplify your workflow with theme inheritance. No need for convoluted configurations—just inherit the theme
+      directly and let your creativity flow. Focus on design and content, and let Vivia handle the rest.</p>
+
+    <h3>Effortless Image Processing</h3>
+    <p>Enhance your visuals effortlessly. Vivia's efficient image processing capabilities enable you to add watermarks
+      and polish your images, ensuring a professional and captivating presentation.</p>
+
+    <h3>User-Friendly Interface</h3>
+    <p>Get started with ease. Vivia's user-friendly interface offers intuitive commands, making it accessible to both
+      beginners and experienced developers. Unleash your creativity without any learning curve.</p>
+
   </div>
 </div>
 {{/block}}

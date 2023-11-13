@@ -2,7 +2,7 @@
 .banner {
   color: white;
   padding: 20px;
-  height: 360px;
+  height: 300px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -50,9 +50,8 @@
   color: lightgray;
 }
 
-/* features */
-.features {
-  color: lightgray;
+.poster {
+  color: white;
   padding: 20px;
-  background-color: var(--primary-dark);
+  background-color: var(--primary-light);
 }
